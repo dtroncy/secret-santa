@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#addField{
+	padding:5px;
+	display:inline-block;
+	color: black;
+	border:1px solid #005;
+}
+
+.removeField{
+	margin:auto;
+	margin-left:5px;
+	padding:5px;
+	display:inline-block;
+	background-color:#B02109;
+	color:#f1f1f1;
+	border:1px solid #005;
+}
+
+.removeFieldDisable{
+	margin:auto;
+	margin-left:5px;
+	padding:5px;
+	display:inline-block;
+	background-color:grey;
+	color:#f1f1f1;
+	border:1px solid #005;
+}
+
+#addField:hover, .removeField:hover{
+	cursor: pointer;
+}

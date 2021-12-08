@@ -1,0 +1,53 @@
+{{define "index"}}
+<!doctype html>
+<html lang="fr">
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=author content="Damien Troncy">
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    
+    <script type="text/javascript" src="/static/scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/static/scripts/addInput.js"></script>
+    
+    <title>{{.Title}}</title>
+  </head>
+  <body>
+    
+    <div>
+      <h1>Welcome to Secret Santa</h1>
+
+      <span id="addField">Add a participant</span>
+
+      <form action="" method="get" class="participant">
+        <table id="participants">
+          <tr class="participant">
+            <td>
+              <label for="name1">Participant's name n°1 : </label><input type="text" name="name1" id="name1" required>
+            </td>
+            <td>
+              <label for="email1">Email : </label><input type="email" name="email1" id="email1" required>
+            </td>
+            <td>
+              <span class="removeFieldDisable">Remove</span>
+            </td>
+          </tr>
+          <tr class="participant">
+            <td>
+              <label for="name2">Participant's name n°2 : </label><input type="text" name="name2" id="name2" required>
+            </td>
+            <td>
+              <label for="email2">Email : </label><input type="email" name="email2" id="email2" required>
+            </td>
+            <td>
+              <span class="removeFieldDisable">Remove</span>
+            </td>
+          </tr>
+          </table>
+        <input type="submit" value="Start the draw">
+      </form>
+    </div>
+  </body>
+</html>
+{{end}}
